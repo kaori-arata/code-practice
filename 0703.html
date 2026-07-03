@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+
+  <body>
+    <!--title-->
+    <h1 id="title">Encuesta sobre el Viaje de Fin de Curso (6º de Primaria)</h1>
+    <p id="description">Por favor, comparte tu opinión sobre el plan ideal para el viaje (excursión de un día, con pernocta, nacional o internacional).</p><br>
+
+    <p>* Campo obligatorio</p>
+    <!--survey form-->
+    <form id="survey-form">
+
+      <!--name-->
+      <label 
+      id="name-label"
+      for="name">Nombre del alumno/a: *</label>
+
+      <input
+        required
+        id="name"
+        type="text"
+        placeholder="nombre completo"
+      ><br><br>
+    
+      <!--email-->
+      <label 
+        id="email-label"
+        for="email">Correo electrónico del tutor/a *</label>
+
+      <input
+        required
+        id="email"
+        type="email"
+        placeholder="ejemplo@xxxx.com"
+      ><br><br>
+    
+      <!--number-->
+      <label 
+        id="number-label"
+        for="number">Presupuesto máximo para gastos personales (10a100€):</label>
+
+      <input
+        id="number"
+        type="number"
+        min="10"
+        max="100"
+        placeholder="0"
+      ><br><br>
+    
+      <p>¿Qué destino prefieres?</p>
+
+      <!--dropdown to select the destination-->
+      <label 
+        id="dropdown-label"
+        for="dropdown">Destino de preferencia:</label>
+
+      <select id="dropdown">
+        <option value="domestic">Nacional (Dentro de España)</option>
+        <option value="overseas">Internacional (Países de Europa)</option>
+      </select><br><br>
+
+      <p>¿Qué duración prefieres para el viaje?</p>
+
+      <!--radio bottons-->
+      <input 
+        id="day"
+        type="radio" 
+        name="duration" 
+        value="day"
+      >
+
+      <label 
+        id="day-label"
+        for="day"
+      >Excursión de un día (Sin pernocta)</label><br>
+      
+      <input
+        id="overnight"
+        type="radio"
+        name="duration"
+        value="overnight"
+      >
+
+      <label
+        id="overnight-label"
+        for="overnight"
+      >Viaje con estancia (Con pernocta)</label>
+      <br><br>
+
+      <p>¿Qué actividades te gustaría hacer? (Multi-selección)</p>
+
+      <!--checkbox-->
+      <input
+        type="checkbox"
+        id="amusement-park"
+        name="activities"
+        value="amusement-park"
+      >
+      <label for="amusement-park">Parque de atracciones /</label>
+
+      <input
+        type="checkbox"
+        id="camp"
+        name="activities"
+        value="camp"
+      >
+      <label for="camp">Temático campamento / </label>
+
+      <input
+        type="checkbox"
+        id="nature"
+        name="activities"
+        value="nature"
+      >
+      <label for="nature">Actividades en la naturaleza / </label>
+
+      <input
+        type="checkbox"
+        id="culture"
+        name="activities"
+        value="culture"
+      >
+      <label for="culture">Visita cultural e histórica / </label>
+
+      <input
+        type="checkbox"
+        id="shopping"
+        name="activities"
+        value="shopping"
+      >
+      <label for="shopping">Tiempo libre para compras / </label>
+      <br><br>
+
+
+      <!--textarea-->
+      <p>Comentarios o sugerencias adicionales:</p>
+      <textarea
+        rows="10"
+        cols="50"
+      ></textarea>
+      <br>
+
+      <button
+        id="submit"
+      >Enviar encuesta</button>
+
+    </form>
+    
+  </body>
+</html>
