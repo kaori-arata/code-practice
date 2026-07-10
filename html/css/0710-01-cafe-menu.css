@@ -1,0 +1,10 @@
+body{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 90vw;
+    min-height: calc(100vh - 60px);
+}
+
+hr, section{
+    width: 100%;
+}
