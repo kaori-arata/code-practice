@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto - Mundo Tech</h1>
+
+        <p>Por favor, rellena el siguiente formulario para enviarnos tus dudas o sugerencias.</p>
+    </header>
+    
+    <main>
+        <form>
+            <div>
+            <label for="nombre">Nombre completo: </label>
+            <input  
+                required 
+                type="text" 
+                id="nombre" 
+                name="nombre"
+                placeholder="Introduzca su nombre completo"
+            >
+            </div>
+            
+            <div>
+            <label for="email">Correo electrónico: </label>
+            <input 
+                required 
+                type="email" 
+                id="email" 
+                name="email"
+                placeholder="ejemplo@correo.com"
+            >
+            </div>
+
+            <div>
+            <label for="mensaje">Tu Mensaje</label>
+            <textarea 
+                name="mensaje" 
+                id="mensaje"
+                placeholder="Introduzca mensaje"
+            >
+            </textarea>
+            </div>
+            
+            <button type="submit">Enviar formulario</button>
+        </form>
+    </main>
+</body>
+</html>
