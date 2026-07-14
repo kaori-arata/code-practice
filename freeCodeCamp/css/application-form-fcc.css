@@ -1,26 +1,42 @@
 body {
     background-color: #0b0f19;
+    padding: 12px 16px;
+}
+
+h1 {
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 48px;
+}
+
+p {
+    margin: 0 12px;
 }
 
 .container {
     background-color: #171e30;
-    color: #a78bfa;
+    color: #c2adfe;
     width: 100%;
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px;
 }
 
-input:first-of-type {
-    border-radius: 10px;
-}
-
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
     outline: none;
     border-color: rgb(223, 184, 111);
 }
 
-label:not(.radio-label){
+label:not(.radio-label) {
     display: block;
     margin-top: 20px;
     margin-bottom: 4px;
@@ -28,49 +44,64 @@ label:not(.radio-label){
 
 fieldset {
     margin-top: 20px;
+    padding: 12px 20px;
+    border-radius: 8px;
 }
 
+.radio-group input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: #fef3c5da;
+    display: inline-block;
+    vertical-align: middle;
+}
 
-/* wip: fixing radio button */
 .radio-group input[type="radio"]:checked {
     border-color: rgb(223, 184, 111);
-    background-color: rgb(223, 184, 111) ;
-    box-shadow: 0 0 8px rgb(223, 184, 111);
+    background-color: rgb(255, 189, 68);
+    box-shadow: 0 0 8px rgb(254, 217, 147);
 }
 
-.radio-group input[type="radio"]:checked + label {
+.radio-group input[type="radio"]:checked+label {
     color: #d9f99d;
 }
 
-input:not(.radio), select, textarea {
+input:not(.radio),
+select,
+textarea {
+    border: none;
+    border: 2px solid white;
     width: 100%;
+    height: 40px;
+    font-size: 1rem;
     padding: 8px;
+    border-radius: 8px;
     box-sizing: border-box;
 }
 
-input:valid, select:valid, textarea:valid {
-    border-color: rgb(88, 227, 88);
-}
-
-input:invalid, select:invalid, textarea:invalid {
-    border-color: red;
+.radio,
+.radio-label {
+    margin: 8px 4px;
 }
 
 button {
+    border: none;
     background-color: #57488a;
     color: #d9f99d;
-    margin: 20px;
+    margin: 24px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 8px 20px;
+    padding: 10px 20px;
     font-size: 1.1em;
     border-radius: 5px;
-
 }
 
 button:hover {
     background-color: #8175a7;
+    box-shadow: 0 0 15px #c9b9ff;
 }
-
-
