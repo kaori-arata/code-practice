@@ -1,0 +1,41 @@
+body{
+    background-color: #f4f4f4;
+}
+
+.color-grid {
+    padding: 40px;
+    text-align: center;
+}
+
+.color-box {
+    width: 60px;
+    height: 60px;
+    margin: 20px ;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.color1 {
+    background-color: #4d970c;
+    box-shadow: 0 0 30px 10px rgb(255, 191, 0);
+}
+
+.color2 {
+    background-color: rgb(255, 155, 23);
+    box-shadow: 0 0 30px 10px rgb(85, 255, 0);
+}
+
+.color3 {
+    background-color: skyblue;
+    box-shadow: 0 0 30px 10px #ff1fce;
+}
+
+.color4 {
+    background-color: hsl(280, 36%, 50%);
+    box-shadow: 0 0 30px 10px rgb(242, 249, 36);
+}
+
+.color5 {
+    background-color: #fff535;
+    box-shadow: 0 0 30px 10px rgb(134, 54, 255);
+}
