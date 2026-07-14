@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="css/application-form-fcc.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TechPro Academy</h1>
+        <h2>Application Form</h2>
+        <p>* required</p>
+
+        <form>
+            <label for="name">Full Name: *</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Jane Doe" required>
+
+            <label for="email">Email Address: *</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <label for="age">Age: *<span class="age-hint">(10 or older)</span></label>
+            <input type="number" id="age" name="age" min="10" placeholder="25" required>
+
+            <label for="position">Select your course: *</label>
+            <select name="position" id="position" required>
+                <option value="" disabled selected>-- Choose a course--</option>
+                <option value="undecided">Not decided yet</option>
+                <option value="html-css">HTML & CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+
+            <fieldset class="radio-group">
+                <legend>Preferred Schedule</legend>
+
+                <div class="not-decided">
+                    <input class="radio" type="radio" name="availability" id="not-decided" value="not-decided">
+                    <label class="radio-label" for="not-decided">Not decided yet</label>
+                </div>
+
+                <div class="morning">
+                    <input class="radio" type="radio" name="availability" id="morning" value="morning">
+                    <label class="radio-label" for="morning">Morning: 10:00 AM - 11:50 AM</label>
+                </div>
+
+                <div class="afternoon">
+                    <input class="radio" type="radio" name="availability" id="afternoon" value="afternoon">
+                    <label class="radio-label" for="afternoon">Afternoon: 3:00 PM - 4:50 PM</label>
+                </div>
+
+                <div class="evening">
+                    <input class="radio" type="radio" name="availability" id="evening" value="evening">
+                    <label class="radio-label" for="evening">Evening: 7:00 PM - 8:50 PM</label>
+                </div>
+            </fieldset>
+
+            <label for="message">Questions or Comments</label>
+            <textarea name="message" id="message"
+                placeholder="Feel free to ask a question or leave a comment..."></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
