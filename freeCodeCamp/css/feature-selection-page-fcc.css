@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+}
+
+.feature-card-container {
+    width: 100%;
+    min-height: 300px;
+    text-align: center;
+    background-color: #fbcdcd;
+    padding-top: 24px;
+}
+
+.storage,
+.support {
+    width: 40%;
+    height: 100px;
+    display: inline-block;
+    background-color: #f2fdd4;
+    padding: 4px 8px;
+    max-width: 240px;
+    min-width: 200px;
+    vertical-align: top;
+    margin: 0 12px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 2px solid #9d9090;
+    display: block;
+    margin-left: auto;
+}
+
+input:checked {
+    background-color: #6f9444;
+    border: 2px solid #526530;
+
+}
+
+input:checked::after {
+    content:"✓";
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+}
+
+div {
+    border-radius: 12px;
+}
