@@ -1,0 +1,40 @@
+#email {
+    width: 480px;
+    height: 550px;
+    margin: 20px auto;
+    padding: 32px 40px;
+    background-color: #f5eee6;
+    box-sizing: border-box;
+}
+
+#confidential {
+    background-color: transparent;
+    font-size: 1.7rem;
+    width: 230px;
+    text-align: center;
+    border: 5px solid red;
+    font-weight: bold;
+    color: red ;
+    padding: 8px;
+    margin: 24px 0 20px auto;
+    transform: rotate(-20deg);
+}
+
+#top-secret {
+    background-color: transparent;
+    font-size: 1.3rem;
+    width: 150px;
+    text-align: center;
+    border: 5px solid red;
+    font-weight: bold;
+    color: red ;
+    padding: 8px;
+    margin: 40px 30px 0 auto;
+    transform: rotate(15deg);
+}
+
+
+span {
+    filter: blur(3px);
+}
+
